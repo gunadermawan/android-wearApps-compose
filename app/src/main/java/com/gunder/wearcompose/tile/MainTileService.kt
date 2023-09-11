@@ -5,6 +5,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleRegistry
 import androidx.wear.tiles.LayoutElementBuilders
 import androidx.wear.tiles.RequestBuilders
 import androidx.wear.tiles.ResourceBuilders
