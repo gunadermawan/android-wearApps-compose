@@ -18,14 +18,17 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import androidx.wear.compose.material.MaterialTheme
 import androidx.wear.compose.material.Text
-import com.gunder.wearcompose.presentation.components.button.MainButton
+import com.gunder.wearcompose.presentation.components.card.MainCard
+import com.gunder.wearcompose.presentation.components.stepper.MainStepper
+import com.gunder.wearcompose.presentation.components.utils.TimeText
 import com.gunder.wearcompose.presentation.theme.WearComposeTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MainButton()
+            TimeText()
+            MainCard()
         }
     }
 }

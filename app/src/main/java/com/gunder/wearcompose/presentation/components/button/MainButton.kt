@@ -1,9 +1,11 @@
 package com.gunder.wearcompose.presentation.components.button
 
+import android.text.format.DateFormat
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -21,7 +23,10 @@ import androidx.wear.compose.material.Button
 import androidx.wear.compose.material.ButtonDefaults
 import androidx.wear.compose.material.Icon
 import androidx.wear.compose.material.Text
+import androidx.wear.compose.material.TimeText
+import androidx.wear.compose.material.TimeTextDefaults
 import com.gunder.wearcompose.R
+import java.util.Locale
 
 @Composable
 fun MainButton(modifier: Modifier = Modifier) {
@@ -43,7 +48,7 @@ fun MainButton(modifier: Modifier = Modifier) {
             fontFamily = FontFamily.SansSerif,
             fontWeight = FontWeight.Bold
         )
-        Spacer(modifier = Modifier.size(4.dp))
+        Spacer(modifier = Modifier.size(16.dp))
         Button(onClick = {}, colors = ButtonDefaults.buttonColors(backgroundColor = Color.Red)) {
             Icon(
                 painter = painterResource(id = R.drawable.ic_call_ended),
